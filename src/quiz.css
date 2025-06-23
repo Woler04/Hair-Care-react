@@ -1,0 +1,62 @@
+#root 
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+.btn-quiz {
+  color: #1C2635;                  /* Text color: white */
+  background-color: #fff;   /* Primary blue background */     
+  padding: 0.375rem 0.75rem;   /* Padding inside the button */
+  font-size: 1rem;             /* Font size */
+  line-height: 1.5;            /* Line height */
+  border-radius: 8px;      /* Rounded corners */
+  border: #5BC1ED 1px solid;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.btn-quiz:hover {
+  background-color: #e3f7ff;   /* Darker blue on hover */
+  border-color: #4badd7;
+  text-decoration: none;
+  color: #1C2635;
+}
+
+.btn-quiz:focus, 
+.btn-quiz.focus {
+  outline: 0;
+  background-color: #e7f9ff;
+  box-shadow: 0 0 0 0.2rem rgba(78, 167, 195, 0.5);
+}
+
+.rowing
+{
+    display: flex;        
+    flex-wrap: wrap;  
+    flex-shrink: 0;
+}
+
+.column
+{
+    margin: 0;
+    flex: 1 1 20%; 
+    max-width: 35%;
+}
+
+.p-1
+{
+    padding: 5px;
+}
+
+@media (max-width: 1005px) {
+  .column {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 0;   /* optional: remove side padding for full width */
+  }
+}
